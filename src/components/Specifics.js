@@ -9,10 +9,10 @@ function Specifics() {
       </Head>
 
       <First>
-        <Right>
+        <Right1>
           <img src="\assets\mainContent\Specific1.png" alt="" />
-        </Right>
-        <Left>
+        </Right1>
+        <Left1>
           <h1>Exclusive Alpha</h1>
           <p>
             With a Coliseum membership, receive exclusive daily alpha on the
@@ -22,14 +22,14 @@ function Specifics() {
             Education and Analysis, Ecommerce Education, High Ticket Sales
             education, and Crypto Gaming.
           </p>
-        </Left>
+        </Left1>
       </First>
 
       <Second>
-        <Right>
+        <Right2>
           <img src="\assets\mainContent\Specific2.png" alt="" />
-        </Right>
-        <Left>
+        </Right2>
+        <Left2>
           <h1>Top Tier Tools</h1>
           <p>
             A Coliseum membership will unlock access to: botting tools, contract
@@ -38,14 +38,14 @@ function Specifics() {
             tool. Coliseum will be using a percentage from mint and royalties to
             develop our own custom tools as well.
           </p>
-        </Left>
+        </Left2>
       </Second>
 
-      <First>
-        <Right>
+      <Three>
+        <Right3>
           <img src="\assets\mainContent\Specific3.png" alt="" />
-        </Right>
-        <Left>
+        </Right3>
+        <Left3>
           <h1>Education</h1>
           <p>
             Obtain valuable information that you otherwise cannot find on social
@@ -54,14 +54,14 @@ function Specifics() {
             from WEB3 to real life, that help you dominate as an individual in
             all aspects of your life.
           </p>
-        </Left>
-      </First>
+        </Left3>
+      </Three>
 
-      <Second>
-        <Right>
+      <Four>
+        <Right4>
           <img src="\assets\mainContent\Specific4.png" alt="" />
-        </Right>
-        <Left>
+        </Right4>
+        <Left4>
           <h1>Gladiator Edge</h1>
           <p>
             Thousands of NFT projects start development every single month yet
@@ -72,8 +72,8 @@ function Specifics() {
             possible. Through Coliseum membership, vetted and quality seed round
             opportunities are delivered to you on a tray.
           </p>
-        </Left>
-      </Second>
+        </Left4>
+      </Four>
     </Container>
   );
 }
@@ -89,7 +89,7 @@ const Head = styled.div`
   text-align: center;
   h1 {
     color: rgb(199, 171, 85);
-    margin-bottom: 150px;
+    margin-bottom: 100px;
   }
 `;
 
@@ -111,6 +111,7 @@ const First = styled.div`
   p {
     width: 900px;
     color: white;
+    font-size: 19px;
   }
 `;
 
@@ -123,6 +124,7 @@ const Second = styled.div`
   background-color: rgb(11, 13, 18);
   padding-top: 30px;
   padding-bottom: 30px;
+  margin-left: 50px;
 
   h1 {
     width: 910px;
@@ -133,9 +135,30 @@ const Second = styled.div`
   p {
     width: 900px;
     color: white;
+    font-size: 19px;
   }
 `;
 
-const Right = styled.div``;
+const Three = styled(First)``;
 
-const Left = styled.div``;
+const Four = styled(First)``;
+
+const Right1 = styled.div``;
+
+const Right2 = styled.div`
+  margin-left: 10px;
+`;
+
+const Right3 = styled.div``;
+
+const Right4 = styled.div``;
+
+const Left1 = styled.div``;
+
+const Left2 = styled.div`
+  margin-left: 40px;
+`;
+
+const Left3 = styled.div``;
+
+const Left4 = styled.div``;

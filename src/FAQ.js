@@ -18,8 +18,8 @@ function FAQ() {
 
   const handleClick = () => {
     setRotation(rotation + 180);
-  };
-
+  }
+  
   const handleClick2 = () => {
     setRotation2(rotation2 + 180);
   };
@@ -193,9 +193,9 @@ function FAQ() {
           className="ColiseumLogo"
         />
         <UnderFooter>
-          <img src="/assets/navbar/twitter.png" alt="" className="twitter" />
-          <img src="/assets/navbar/discord.png" alt="" className="discord" />
-          <img src="/assets/navbar/opensea.png" alt="" className="opensea" />
+          <img src="/assets/navbar/twitter.png" alt="" className="twitter-bottom" />
+          <img src="/assets/navbar/discord.png" alt="" className="discord-bottom" />
+          <img src="/assets/navbar/opensea.png" alt="" className="opensea-bottom" />
         </UnderFooter>
       </Footer>
     </Container>
@@ -209,7 +209,7 @@ const Container = styled.div`
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 900px;
+  height: 1000px;
 `;
 
 const Head = styled.div`
@@ -241,12 +241,10 @@ const Left = styled.div`
 `;
 
 const One = styled.div`
-  margin-left: 30px;
+  margin-left: -30px;
 `;
 
-const Two = styled(One)`
-  margin-left: 30px;
-`;
+const Two = styled(One)``;
 
 const Three = styled(One)``;
 
@@ -260,12 +258,13 @@ const BurgerNav = styled.div`
   height: ${(props) => (props.isVisible ? "100px" : 0)};
   transition: height 0.3s ease-in-out;
   overflow: hidden;
-  margin-left: 30px;
+  margin-left: 40px;
   width: 800px;
 
   p {
     font-size: 18px;
     line-height: 25px;
+    font-size: 19px;
   }
 `;
 
@@ -273,12 +272,13 @@ const BurgerNav2 = styled.div`
   height: ${(props) => (props.isVisible ? "120px" : 0)};
   transition: height 0.3s ease-in-out;
   overflow: hidden;
-  margin-left: 30px;
+  margin-left: 40px;
   width: 800px;
 
   p {
     font-size: 18px;
     line-height: 25px;
+    font-size: 19px;
   }
 `;
 
@@ -286,12 +286,13 @@ const BurgerNav3 = styled.div`
   height: ${(props) => (props.isVisible ? "100px" : 0)};
   transition: height 0.3s ease-in-out;
   overflow: hidden;
-  margin-right: 80px;
+  margin-left: 40px;
   width: 800px;
 
   p {
     font-size: 18px;
     line-height: 25px;
+    font-size: 19px;
   }
 `;
 
@@ -299,12 +300,13 @@ const BurgerNav4 = styled.div`
   height: ${(props) => (props.isVisible ? "100px" : 0)};
   transition: height 0.3s ease-in-out;
   overflow: hidden;
-  margin-left: 30px;
+  margin-left: 40px;
   width: 800px;
 
   p {
     font-size: 18px;
     line-height: 25px;
+    font-size: 19px;
   }
 `;
 
@@ -312,12 +314,13 @@ const BurgerNav5 = styled.div`
   height: ${(props) => (props.isVisible ? "120px" : 0)};
   transition: height 0.3s ease-in-out;
   overflow: hidden;
-  margin-left: 30px;
+  margin-left: 40px;
   width: 800px;
 
   p {
     font-size: 18px;
     line-height: 25px;
+    font-size: 19px;
   }
 `;
 
@@ -325,24 +328,14 @@ const BurgerNav6 = styled.div`
   height: ${(props) => (props.isVisible ? "100px" : 0)};
   transition: height 0.3s ease-in-out;
   overflow: hidden;
-  margin-left: 30px;
+  margin-left: 40px;
   width: 800px;
 
   p {
     font-size: 18px;
     line-height: 25px;
+    font-size: 19px;
   }
-`;
-
-const Footer = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-`;
-
-const UnderFooter = styled.div`
-  margin-top: 30px;
 `;
 
 const Title = styled.div`
@@ -389,4 +382,16 @@ const Arrow = styled.div`
   img {
     width: 40px;
   }
+`;
+
+const Footer = styled.div`
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`;
+
+const UnderFooter = styled.div`
+  margin-top: 30px;
 `;

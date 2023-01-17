@@ -74,24 +74,24 @@ p {
 }
 
 .ColiseumLogo {
+  margin-left: 30px;
   width: 60px;
-  margin-right: 20px;
-  transition: width 0.3s ease-in-out;
-}
-
-.ColiseumLogo:hover {
-  width: 70px;
 }
 
 .barrier {
   width: 10px;
   height: 50px;
   margin-right: 20px;
+  margin-left: 5px;
+  margin-top: -25px;
+  position: absolute;
 }
 
 .twitter {
   width: 30px;
-  margin-right: 20px;
+  margin-left: 25px;
+  margin-top: -10px;
+  position: absolute;
   transition: width 0.3s ease-in-out;
 }
 
@@ -102,7 +102,9 @@ p {
 .discord {
   width: 30px;
   margin-right: 20px;
-  margin-right: 20px;
+  margin-left: 70px;
+  margin-top: -10px;
+  position: absolute;
   transition: width 0.3s ease-in-out;
 }
 
@@ -113,7 +115,9 @@ p {
 .opensea {
   width: 30px;
   margin-right: 20px;
-  margin-right: 20px;
+  margin-left: 115px;
+  margin-top: -10px;
+  position: absolute;
   transition: width 0.3s ease-in-out;
 }
 
@@ -122,7 +126,7 @@ p {
 }
 
 .TitleOne {
-  width: 400px;
+  width: 450px;
 }
 
 .ColLogo {
@@ -130,5 +134,38 @@ p {
 }
 
 .TitleTwo {
-  width: 400px;
+  width: 450px;
+}
+
+.twitter-bottom {
+  width: 30px;
+  margin-left: -70px;
+  position: absolute;
+  transition: width 0.3s ease-in-out;
+}
+
+.twitter-bottom:hover {
+  width: 35px;
+}
+
+.discord-bottom {
+  width: 30px;
+  margin-left: -20px;
+  position: absolute;
+  transition: width 0.3s ease-in-out;
+}
+
+.discord-bottom:hover {
+  width: 35px;
+}
+
+.opensea-bottom {
+  width: 30px;
+  margin-left: 30px;
+  position: absolute;
+  transition: width 0.3s ease-in-out;
+}
+
+.opensea-bottom:hover {
+  width: 35px;
 }

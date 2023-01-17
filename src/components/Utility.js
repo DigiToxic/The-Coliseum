@@ -6,7 +6,7 @@ function Utility() {
     <Container>
       <HeadUtility>
         <h1>Coliseum's Utility</h1>
-        <p>The following sets Coliseum apart from the rest:</p>
+        <p>The following sets Coliseum apart from the rest :</p>
       </HeadUtility>
 
       <UtilityCoin>
@@ -94,6 +94,7 @@ const HeadUtility = styled.div`
 
   p {
     color: white;
+    font-size: 20px;
   }
 `;
 
@@ -156,5 +157,6 @@ const TextOne = styled.div`
 
   p {
     color: white;
+    font-size: 19px;
   }
 `;
