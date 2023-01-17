@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { Link } from "react-scroll";
 
 function Navbar() {
   return (
@@ -37,10 +38,10 @@ function Navbar() {
       </Middle>
 
       <Left>
-        <img src="/assets/navbar/Utility.png" alt="" className="Utility" />
-        <img src="/assets/navbar/Specifics.png" alt="" className="Specifics" />
-        <img src="/assets/navbar/faqs.png" alt="" className="faqs" />
-        <img src="/assets/navbar/enter1000.png" alt="" className="enter1000" />
+      <Link activeClass="active" to="Utility" spy={true} smooth={true}><img src="/assets/navbar/Utility.png" alt="" className="Utility" /></Link>
+      <Link to="Specifics" spy={true} smooth={true}><img src="/assets/navbar/Specifics.png" alt="" className="Specifics" /></Link>
+      <Link to="FAQ" spy={true} smooth={true}><img src="/assets/navbar/faqs.png" alt="" className="faqs" /></Link>
+        <a href="https://cw-ak.vercel.app/mint"><img src="/assets/navbar/enter1000.png" alt="" className="enter1000" /></a>
       </Left>
     </Container>
   );

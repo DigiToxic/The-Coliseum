@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 function Utility() {
   return (
-    <Container>
+    <Container id="Utility">
       <HeadUtility>
         <h1>Coliseum's Utility</h1>
         <p>The following sets Coliseum apart from the rest :</p>
@@ -86,7 +86,7 @@ const Container = styled.div`
 
 const HeadUtility = styled.div`
   margin-top: 100px;
-  margin-bottom: 150px;
+  margin-bottom: 100px;
   text-align: center;
   h1 {
     color: rgb(199, 171, 85);

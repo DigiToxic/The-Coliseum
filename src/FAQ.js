@@ -41,7 +41,7 @@ function FAQ() {
   };
 
   return (
-    <Container>
+    <Container id="FAQ">
       <Head>
         <h1>FAQ</h1>
       </Head>
@@ -237,13 +237,17 @@ const Container = styled.div`
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 1000px;
+  height: 800px;
 `;
 
 const Head = styled.div`
   margin-top: 120px;
   margin-bottom: 50px;
   text-align: center;
+  
+  h1 {
+    font-size: 35px;
+  }
 `;
 
 const Middle = styled.div`
@@ -251,7 +255,7 @@ const Middle = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  height: 700px;
+  height: 500px;
 `;
 
 const Right = styled.div`
@@ -378,10 +382,10 @@ const Title = styled.div`
   background-image: url("https://static.wixstatic.com/media/a67ef4_a58691a592bf47f4bd8c6c4fce9655aa~mv2.png");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 880px 100px;
+  background-size: 700px 100px;
 
   h1 {
-    font-size: 27px;
+    font-size: 23px;
   }
 `;
 
@@ -392,17 +396,15 @@ const Title3 = styled(Title)`
 `;
 
 const Title4 = styled(Title)`
-  background-size: 840px 100px;
+  padding-left:20px;
 `;
 
 const Title5 = styled(Title)`
-  padding-left: 240px;
-  background-size: 840px 100px;
+  padding-left: 180px;
 `;
 
 const Title6 = styled(Title)`
-  padding-left: 140px;
-  background-size: 840px 100px;
+  padding-left: 100px;
 `;
 
 const Arrow = styled.div`
