@@ -74,6 +74,8 @@ const Middle = styled.div`
   img {
     width: 300px;
   }
+  width: 72%;
+  position: absolute;
 `;
 
 const Left = styled.div`
@@ -81,4 +83,6 @@ const Left = styled.div`
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  width: 165%;
+  position: absolute;
 `;

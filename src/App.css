@@ -22,7 +22,10 @@ p {
 
 .Utility {
   width: 100px;
+  margin-top: 2px;
   margin-right: 20px;
+  position: absolute;
+  margin-left: -370px;
   transition: width 0.3s ease-in-out, border-bottom 0.3s ease-in-out;
 }
 
@@ -33,7 +36,10 @@ p {
 
 .Specifics {
   width: 120px;
+  margin-top: 2px;
   margin-right: 20px;
+  position: absolute;
+  margin-left: -120px;
   transition: width 0.3s ease-in-out, border-bottom 0.3s ease-in-out;
 }
 
@@ -45,6 +51,8 @@ p {
 .faqs {
   width: 60px;
   margin-right: 20px;
+  margin-left: 100px;
+  position: absolute;
   transition: width 0.3s ease-in-out, border-bottom 0.3s ease-in-out;
 }
 
@@ -56,6 +64,8 @@ p {
 .enter1000 {
   width: 150px;
   margin-right: 20px;
+  margin-left: 350px;
+  position: absolute;
   transition: width 0.3s ease-in-out;
 }
 
