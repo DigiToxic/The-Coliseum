@@ -18,8 +18,8 @@ function FAQ() {
 
   const handleClick = () => {
     setRotation(rotation + 180);
-  }
-  
+  };
+
   const handleClick2 = () => {
     setRotation2(rotation2 + 180);
   };
@@ -187,15 +187,43 @@ function FAQ() {
       </Middle>
 
       <Footer>
-        <img
-          src="\assets\navbar\ColiseumLogo.png"
-          alt=""
-          className="ColiseumLogo"
-        />
+        <a href="https://www.coliseumnft.com/" rel="noreferrer" target="_blank">
+          <img
+            src="\assets\navbar\ColiseumLogo.png"
+            alt=""
+            className="ColiseumLogo"
+          />
+        </a>
         <UnderFooter>
-          <img src="/assets/navbar/twitter.png" alt="" className="twitter-bottom" />
-          <img src="/assets/navbar/discord.png" alt="" className="discord-bottom" />
-          <img src="/assets/navbar/opensea.png" alt="" className="opensea-bottom" />
+          <a
+            href="https://twitter.com/ColiseumNFT"
+            rel="noreferrer"
+            target="_blank"
+          >
+            <img
+              src="/assets/navbar/twitter.png"
+              alt=""
+              className="twitter-bottom"
+            />
+          </a>
+          <a
+            href="https://discord.com/invite/jCd8AU2QfX"
+            rel="noreferrer"
+            target="_blank"
+          >
+            <img
+              src="/assets/navbar/discord.png"
+              alt=""
+              className="discord-bottom"
+            />
+          </a>
+          <a href="https://opensea.io/" rel="noreferrer" target="_blank">
+            <img
+              src="/assets/navbar/opensea.png"
+              alt=""
+              className="opensea-bottom"
+            />
+          </a>
         </UnderFooter>
       </Footer>
     </Container>
