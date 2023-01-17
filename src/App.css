@@ -1,38 +1,124 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap");
+
+body {
+  background-color: rgb(9, 9, 9);
+  overflow-x: hidden;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  font-family: Cinzel Decorative;
+  color: rgb(199, 171, 85);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+p {
+  font-family: serif;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.Utility {
+  width: 100px;
+  margin-right: 20px;
+  transition: width 0.3s ease-in-out, border-bottom 0.3s ease-in-out;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Utility:hover {
+  width: 110px;
+  border-bottom: 2px solid rgb(199, 171, 85);
+}
+
+.Specifics {
+  width: 120px;
+  margin-right: 20px;
+  transition: width 0.3s ease-in-out, border-bottom 0.3s ease-in-out;
+}
+
+.Specifics:hover {
+  width: 130px;
+  border-bottom: 2px solid rgb(199, 171, 85);
+}
+
+.faqs {
+  width: 60px;
+  margin-right: 20px;
+  transition: width 0.3s ease-in-out, border-bottom 0.3s ease-in-out;
+}
+
+.faqs:hover {
+  width: 70px;
+  border-bottom: 2px solid rgb(199, 171, 85);
+}
+
+.enter1000 {
+  width: 150px;
+  margin-right: 20px;
+  transition: width 0.3s ease-in-out;
+}
+
+.enter1000:hover {
+  width: 170px;
+}
+
+.ColiseumLogo {
+  width: 60px;
+  margin-right: 20px;
+  transition: width 0.3s ease-in-out;
+}
+
+.ColiseumLogo:hover {
+  width: 70px;
+}
+
+.barrier {
+  width: 10px;
+  height: 50px;
+  margin-right: 20px;
+}
+
+.twitter {
+  width: 30px;
+  margin-right: 20px;
+  transition: width 0.3s ease-in-out;
+}
+
+.twitter:hover {
+  width: 35px;
+}
+
+.discord {
+  width: 30px;
+  margin-right: 20px;
+  margin-right: 20px;
+  transition: width 0.3s ease-in-out;
+}
+
+.discord:hover {
+  width: 35px;
+}
+
+.opensea {
+  width: 30px;
+  margin-right: 20px;
+  margin-right: 20px;
+  transition: width 0.3s ease-in-out;
+}
+
+.opensea:hover {
+  width: 35px;
+}
+
+.TitleOne {
+  width: 400px;
+}
+
+.ColLogo {
+  width: 500px;
+}
+
+.TitleTwo {
+  width: 400px;
 }
