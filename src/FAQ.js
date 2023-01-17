@@ -191,7 +191,7 @@ function FAQ() {
           <img
             src="\assets\navbar\ColiseumLogo.png"
             alt=""
-            className="ColiseumLogo"
+            className="ColiseumLogo-bottom"
           />
         </a>
         <UnderFooter>
