@@ -274,6 +274,7 @@ const Left = styled.div`
 
 const One = styled.div`
   margin-left: -30px;
+  width: 700px;
 `;
 
 const Two = styled(One)``;
@@ -290,8 +291,8 @@ const BurgerNav = styled.div`
   height: ${(props) => (props.isVisible ? "100px" : 0)};
   transition: height 0.3s ease-in-out;
   overflow: hidden;
-  margin-left: 40px;
-  width: 800px;
+  margin-left: 50px;
+  width: 600px;
 
   p {
     font-size: 18px;
@@ -304,8 +305,8 @@ const BurgerNav2 = styled.div`
   height: ${(props) => (props.isVisible ? "120px" : 0)};
   transition: height 0.3s ease-in-out;
   overflow: hidden;
-  margin-left: 40px;
-  width: 800px;
+  margin-left: 50px;
+  width: 600px;
 
   p {
     font-size: 18px;
@@ -318,8 +319,8 @@ const BurgerNav3 = styled.div`
   height: ${(props) => (props.isVisible ? "100px" : 0)};
   transition: height 0.3s ease-in-out;
   overflow: hidden;
-  margin-left: 40px;
-  width: 800px;
+  margin-left: 50px;
+  width: 600px;
 
   p {
     font-size: 18px;
@@ -332,8 +333,8 @@ const BurgerNav4 = styled.div`
   height: ${(props) => (props.isVisible ? "100px" : 0)};
   transition: height 0.3s ease-in-out;
   overflow: hidden;
-  margin-left: 40px;
-  width: 800px;
+  margin-left: 50px;
+  width: 700px;
 
   p {
     font-size: 18px;
@@ -346,8 +347,8 @@ const BurgerNav5 = styled.div`
   height: ${(props) => (props.isVisible ? "120px" : 0)};
   transition: height 0.3s ease-in-out;
   overflow: hidden;
-  margin-left: 40px;
-  width: 800px;
+  margin-left: 50px;
+  width: 650px;
 
   p {
     font-size: 18px;
@@ -360,8 +361,8 @@ const BurgerNav6 = styled.div`
   height: ${(props) => (props.isVisible ? "100px" : 0)};
   transition: height 0.3s ease-in-out;
   overflow: hidden;
-  margin-left: 40px;
-  width: 800px;
+  margin-left: 50px;
+  width: 650px;
 
   p {
     font-size: 18px;

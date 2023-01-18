@@ -1,8 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap");
 
+html {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
 body {
   background-color: rgb(9, 9, 9);
   overflow-x: hidden;
+  max-width: 100%;
   -webkit-user-select: none;
   -webkit-touch-callout: none;
   -moz-user-select: none;
@@ -29,6 +35,22 @@ p {
   cursor: pointer;
 }
 
+@media (max-width: 1490px) {
+  .Utility {
+    width: 80px;
+    margin-top: -20px;
+    margin-left: -260px;
+  }
+}
+
+@media (max-width: 1360px) {
+  .Utility {
+    width: 80px;
+    margin-top: -20px;
+    margin-left: -240px;
+  }
+}
+
 .Utility:hover {
   width: 110px;
   border-bottom: 2px solid rgb(199, 171, 85);
@@ -41,6 +63,20 @@ p {
   margin-left: -170px;
   transition: width 0.3s ease-in-out, border-bottom 0.3s ease-in-out;
   cursor: pointer;
+}
+
+@media (max-width: 1490px) {
+  .Specifics {
+    width: 100px;
+    margin-top: -23px;
+    margin-left: -140px;
+  }
+}
+
+@media (max-width: 1360px) {
+  .Specifics {
+    margin-left: -130px;
+  }
 }
 
 .Specifics:hover {
@@ -56,6 +92,19 @@ p {
   cursor: pointer;
 }
 
+@media (max-width: 1490px) {
+  .faqs {
+    width: 55px;
+    margin-top: -31px;
+  }
+}
+
+@media (max-width: 1360px) {
+  .faqs {
+    margin-top: -28px;
+  }
+}
+
 .faqs:hover {
   width: 70px;
   border-bottom: 2px solid rgb(199, 171, 85);
@@ -63,11 +112,32 @@ p {
 
 .enter1000 {
   width: 150px;
-  margin-top: -17px;
+  margin-top: -20px;
   margin-left: 130px;
   position: absolute;
   transition: width 0.3s ease-in-out;
   cursor: pointer;
+}
+
+@media (max-width: 1675px) {
+  .enter1000 {
+    margin-left: 100px;
+  }
+}
+
+@media (max-width: 1490px) {
+  .enter1000 {
+    width: 130px;
+    margin-left: 100px;
+  }
+}
+
+@media (max-width: 1360px) {
+  .enter1000 {
+    width: 120px;
+    margin-left: 80px;
+    margin-top: -16px;
+  }
 }
 
 .enter1000:hover {
@@ -133,12 +203,66 @@ p {
   width: 450px;
 }
 
+@media (max-width: 1401px) {
+  .TitleOne {
+    width: 400px;
+  }
+}
+
+@media (max-width: 1250px) {
+  .TitleOne {
+    width: 350px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .TitleOne {
+    width: 450px;
+  }
+}
+
 .ColLogo {
   width: 500px;
 }
 
+@media (max-width: 1401px) {
+  .ColLogo {
+    width: 450px;
+  }  
+}
+
+@media (max-width: 1250px) {
+  .ColLogo {
+    width: 400px;
+  }  
+}
+
+@media (max-width: 1100px) {
+  .ColLogo {
+    width: 500px;
+  }  
+}
+
 .TitleTwo {
   width: 450px;
+}
+
+@media (max-width: 1401px) {
+  .TitleTwo {
+    width: 400px;
+  }
+}
+
+@media (max-width: 1250px) {
+  .TitleTwo {
+    width: 350px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .TitleTwo {
+    width: 450px;
+  }
 }
 
 .twitter-bottom {

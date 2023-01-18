@@ -3,7 +3,7 @@ import Body from "./components/Body";
 import Navbar from "./components/Navbar";
 import Utility from "./components/Utility";
 import Specifics from "./components/Specifics";
-import FAQ from "./FAQ";
+import FAQ from "./components/FAQ";
 
 function App() {
   return (

@@ -47,6 +47,14 @@ const Container = styled.div`
   background-attachment: fixed;
   background-size: cover;
   height: 1200px;
+
+  @media (max-width: 1250px) {
+    height: 1000px;
+  }
+
+  @media (max-width: 1100px) {
+    height: 1500px;
+  }
 `;
 
 const Middle = styled.div`
@@ -54,6 +62,13 @@ const Middle = styled.div`
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+
+  @media (max-width: 1100px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 `;
 
 const Under = styled.div`
@@ -66,6 +81,24 @@ const Under = styled.div`
   img {
     width: 800px;
   }
+
+  @media (max-width: 1401px) {
+    img {
+      width: 700px;
+    }
+  }
+
+  @media (max-width: 1250px) {
+    img {
+      width: 600px;
+    }
+  }
+
+  @media (max-width: 1100px) {
+    img {
+      width: 800px;
+    }
+  }
 `;
 
 const Video = styled.div`
@@ -77,9 +110,35 @@ const Video = styled.div`
   p {
     font-size: 20px;
     line-height: 25px;
+    color: rgba(255, 255, 255, 0.8)
   }
 
   div {
     width: 800px;
+  }
+
+  @media (max-width: 1401px) {
+    h1 {
+      font-size: 32px;
+    }
+    p {
+      font-size: 19px;
+    }
+
+  @media (max-width: 1250px) {
+    h1 {
+      font-size: 28px;
+    }
+    p {
+      font-size: 15px;
+    }
+
+  @media (max-width: 1100px) {
+    h1 {
+      font-size: 2em;
+    }
+    p {
+      font-size: 20px;
+    }
   }
 `;
