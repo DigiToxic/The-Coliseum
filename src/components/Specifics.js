@@ -82,14 +82,14 @@ export default Specifics;
 
 const Container = styled.div`
   background-color: rgb(9, 9, 9);
-  heigt: 1500px;
+  height: 1400px;
 `;
 
 const Head = styled.div`
   text-align: center;
   h1 {
     color: rgb(199, 171, 85);
-    margin-bottom: 100px;
+    margin-bottom: 80px;
   }
 `;
 
@@ -105,13 +105,47 @@ const First = styled.div`
   h1 {
     width: 910px;
     text-align: start;
-    color: rgb(199, 171, 85);
   }
-
   p {
     width: 900px;
-    color: white;
     font-size: 19px;
+  }
+
+  @media (max-width: 1215px) {
+    h1 {
+      width: 610px;
+    }
+    p {
+      width: 600px;
+    }
+  }
+
+  @media (max-width: 630px) {
+    h1 {
+      width: 510px;
+    }
+    p {
+      width: 500px;
+      font-size: 18px;
+    }
+  }
+
+  @media (max-width: 530px) {
+    h1 {
+      width: 410px;
+    }
+    p {
+      width: 400px;
+    }
+  }
+
+  @media (max-width: 430px) {
+    h1 {
+      width: 360px;
+    }
+    p {
+      width: 350px;
+    }
   }
 `;
 
@@ -124,39 +158,103 @@ const Second = styled.div`
   background-color: rgb(11, 13, 18);
   padding-top: 30px;
   padding-bottom: 30px;
-  margin-left: 50px;
 
   h1 {
     width: 910px;
     text-align: start;
-    color: rgb(199, 171, 85);
   }
-
   p {
     width: 900px;
-    color: white;
     font-size: 19px;
+  }
+
+  @media (max-width: 1215px) {
+    h1 {
+      width: 610px;
+    }
+    p {
+      width: 600px;
+    }
+  }
+
+  @media (max-width: 630px) {
+    h1 {
+      width: 510px;
+    }
+    p {
+      width: 500px;
+      font-size: 18px;
+    }
+  }
+
+  
+  @media (max-width: 530px) {
+    h1 {
+      width: 410px;
+    }
+    p {
+      width: 400px;
+    }
+  }
+
+  @media (max-width: 430px) {
+    h1 {
+      width: 360px;
+    }
+    p {
+      width: 350px;
+    }
   }
 `;
 
 const Three = styled(First)``;
 
-const Four = styled(First)``;
-
-const Right1 = styled.div``;
-
-const Right2 = styled.div`
-  margin-left: 10px;
+const Four = styled(First)`
+  background-color: rgb(11, 13, 18);
 `;
 
-const Right3 = styled.div``;
+const Right1 = styled.div`
+  @media (max-width: 900px) {
+    img {
+      display: none;
+    }
+  }
+`;
 
-const Right4 = styled.div``;
+const Right2 = styled.div`
+  margin-left: 50px;
+
+  @media (max-width: 900px) {
+    img {
+      display: none;
+    }
+  }
+`;
+
+const Right3 = styled.div`
+  @media (max-width: 900px) {
+    img {
+      display: none;
+    }
+  }
+`;
+
+const Right4 = styled.div`
+  @media (max-width: 900px) {
+    img {
+      display: none;
+    }
+  }
+`;
 
 const Left1 = styled.div``;
 
 const Left2 = styled.div`
-  margin-left: 40px;
+  margin-left: 50px;
+
+  @media (max-width: 900px) {
+    margin-left: -50px;
+  }
 `;
 
 const Left3 = styled.div``;

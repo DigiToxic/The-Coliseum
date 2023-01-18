@@ -102,32 +102,32 @@ function Navbar() {
         </CloseWrapper>
         <li>
           <Link
-            to="Kingdom"
+            to="Utility"
             spy={true}
             smooth={true}
             onClick={() => setBurgerStatus(false)}
           >
-            Kingdom
+            Utility
           </Link>
         </li>
         <li>
           <Link
-            to="Team"
+            to="Specifics"
             spy={true}
             smooth={true}
             onClick={() => setBurgerStatus(false)}
           >
-            Nobles
+            Specifics
           </Link>
         </li>
         <li>
           <Link
-            to="Elixir"
+            to="FAQ"
             spy={true}
             smooth={true}
             onClick={() => setBurgerStatus(false)}
           >
-            Elixirs
+            FAQ
           </Link>
         </li>
         <a
@@ -135,10 +135,10 @@ function Navbar() {
           rel="noreferrer"
           target="_blank"
         >
-          <img src="/images/twitter.png" alt="" />
+          <img src="/assets/navbar/twitter.png" alt="" />
         </a>
-        <img src="/images/opensea.png" alt="" />
-        <img src="/images/etherscan.png" alt="" />
+        <img src="/assets/navbar/discord.png" alt="" />
+        <img src="/assets/navbar/opensea.png" alt="" />
       </BurgerNav>
     </Container>
   );
@@ -168,12 +168,23 @@ const Middle = styled.div`
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin-left: 14%;
+  margin-left: 200px;
+  width: 72%;
+  margin-top: 20px;
+
   img {
     width: 300px;
   }
-  width: 72%;
-  position: absolute;
+
+  @media (max-width: 1301px) {
+    margin-left: 20px;
+  }
+
+  @media (max-width: 535px) {
+    img {
+      width: 200px;
+    }
+  }
 `;
 
 const Right = styled.div`
@@ -183,7 +194,6 @@ const Right = styled.div`
   align-items: center;
   margin-right: 300px;
 
-
   @media (max-width: 1301px) {
     display: none;
   }
@@ -192,6 +202,7 @@ const Right = styled.div`
 const OpenWrapper = styled.div`
   display: none;
   margin-right: 20px;
+  margin-top: 15px;
 
   svg {
     width: 60px;
@@ -209,7 +220,7 @@ const BurgerNav = styled.div`
   top: 0;
   bottom: 0;
   right: 0;
-  background: rgb(238, 213, 238);
+  background-color: rgb(9, 9, 9);
   width: 35%;
   z-index: 2;
   list-style: none;
@@ -223,7 +234,7 @@ const BurgerNav = styled.div`
 
   li {
     padding: 15px 0;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
     font-weight: bold;
   }
 
@@ -241,4 +252,5 @@ const BurgerNav = styled.div`
 const CloseWrapper = styled.div`
   display: flex;
   justify-content: end;
+  color: rgb(199, 171, 85);
 `;

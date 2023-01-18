@@ -19,10 +19,17 @@ function Body() {
       </Middle>
 
       <Under>
-        <img src="/assets/mainContent/WorkSmartNotHard.png" alt="" />
+        <div>
+          <h1>Work Smart Not Hard</h1>
+          <p>
+            Coliseum memmbership unlocks access to exclusive alpha, unparalleled
+            network, industry leading tools, education and everything you need
+            to skip the trenches.
+          </p>
+        </div>
       </Under>
 
-      <Video>
+      <About>
         <div>
           <h1>About Coliseum</h1>
           <p>
@@ -30,10 +37,10 @@ function Body() {
             WEB3 space: An all in one access pass. An access pass that not only
             gives you more than everything you need to succeed in WEB3 but is a
             powerhouse equivalent to none other and serves as a base of
-            operations for you to navigate WEB3 to the top.{" "}
+            operations for you to navigate WEB3 to the top.
           </p>
         </div>
-      </Video>
+      </About>
     </Container>
   );
 }
@@ -53,6 +60,10 @@ const Container = styled.div`
   }
 
   @media (max-width: 1100px) {
+    height: 1500px;
+  }
+
+  @media (max-width: 515px) {
     height: 1500px;
   }
 `;
@@ -76,32 +87,43 @@ const Under = styled.div`
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  text-align: center;
   margin-top: 100px;
 
-  img {
-    width: 800px;
+  div {
+    width: 600px;
   }
 
-  @media (max-width: 1401px) {
-    img {
-      width: 700px;
+  p {
+    font-size: 20px;
+    line-height: 25px;
+    color: rgba(255, 255, 255, 0.8);
+  }
+
+  @media (max-width: 650px) {
+    div {
+      width: 500px;
     }
   }
 
-  @media (max-width: 1250px) {
-    img {
-      width: 600px;
+  @media (max-width: 500px) {
+    div {
+      width: 450px;
+    }
+
+    p {
+      font-size: 18px;
     }
   }
 
-  @media (max-width: 1100px) {
-    img {
-      width: 800px;
+  @media (max-width: 450px) {
+    div {
+      width: 400px;
     }
   }
 `;
 
-const Video = styled.div`
+const About = styled.div`
   display: flex;
   justify-content: center;
   text-align: center;
@@ -121,6 +143,7 @@ const Video = styled.div`
     h1 {
       font-size: 32px;
     }
+
     p {
       font-size: 19px;
     }
@@ -129,6 +152,7 @@ const Video = styled.div`
     h1 {
       font-size: 28px;
     }
+
     p {
       font-size: 15px;
     }
@@ -137,8 +161,55 @@ const Video = styled.div`
     h1 {
       font-size: 2em;
     }
+
     p {
       font-size: 20px;
+    }
+  }
+
+  @media (max-width: 825px) {
+    div {
+      width: 600px;
+    }
+
+    h1 {
+      font-size: 30px;
+    }
+
+    p {
+      font-size: 20px;
+    }
+  }
+
+  @media (max-width: 650px) {
+    div {
+      width: 550px;
+    }
+
+    p {
+      font-size: 18px;
+    }
+  }
+
+  @media (max-width: 555px) {
+    div {
+      width: 500px;
+    }
+
+    p {
+      font-size: 18px;
+    }
+  }
+
+  @media (max-width: 515px) {
+    div {
+      width: 400px;
+    }
+  }
+
+  @media (max-width: 410px) {
+    div {
+      width: 350px;
     }
   }
 `;

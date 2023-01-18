@@ -74,7 +74,7 @@ function FAQ() {
               <h1 onClick={() => setIsVisible2(!isVisible2)}>
                 What is the difference between the tiers?
               </h1>
-              <Arrow rotation={rotation} onClick={handleClick}>
+              <Arrow rotation={rotation} onClick={handleClick2}>
                 <img
                   src="\assets\design-assets\Arrow.png"
                   alt=""
@@ -237,29 +237,39 @@ const Container = styled.div`
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 800px;
+  height: 900px;
 
   @media (max-width: 1315px) {
     height: 1000px;
   }
+
+  @media (max-width: 1215px) {
+    height: 1300px;
+  }
 `;
 
 const Head = styled.div`
-  margin-top: 120px;
-  margin-bottom: 50px;
+  margin-top: 5%;
+  margin-bottom: 5%;
   text-align: center;
 
   h1 {
     font-size: 35px;
+    line-height: 1;
   }
 `;
 
 const Middle = styled.div`
   text-align: start;
   display: flex;
-  flex-direction: row;
   justify-content: space-around;
   height: 500px;
+
+  @media (max-width: 1215px) {
+    flex-direction: column;
+    justify-content: center;
+    height: 1000px;
+  }
 `;
 
 const Right = styled.div`
@@ -267,6 +277,11 @@ const Right = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+
+  @media (max-width: 1215px) {
+    justify-content: center;
+    align-items: center;
+  }
 `;
 
 const Left = styled.div`
@@ -274,6 +289,11 @@ const Left = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+
+  @media (max-width: 1215px) {
+    justify-content: center;
+    align-items: center;
+  }
 `;
 
 const One = styled.div`
@@ -296,6 +316,7 @@ const BurgerNav = styled.div`
   transition: height 0.3s ease-in-out;
   overflow: hidden;
   margin-left: 50px;
+  margin-bottom: 20px;
   width: 600px;
 
   p {
@@ -320,6 +341,7 @@ const BurgerNav2 = styled.div`
   transition: height 0.3s ease-in-out;
   overflow: hidden;
   margin-left: 50px;
+  margin-bottom: 20px;
   width: 600px;
 
   p {
@@ -340,10 +362,11 @@ const BurgerNav2 = styled.div`
 `;
 
 const BurgerNav3 = styled.div`
-  height: ${(props) => (props.isVisible ? "100px" : 0)};
+  height: ${(props) => (props.isVisible ? "120px" : 0)};
   transition: height 0.3s ease-in-out;
   overflow: hidden;
   margin-left: 50px;
+  margin-bottom: 20px;
   width: 600px;
 
   p {
@@ -370,6 +393,7 @@ const BurgerNav4 = styled.div`
   transition: height 0.3s ease-in-out;
   overflow: hidden;
   margin-left: 50px;
+
   width: 700px;
 
   p {
@@ -390,10 +414,11 @@ const BurgerNav4 = styled.div`
 `;
 
 const BurgerNav5 = styled.div`
-  height: ${(props) => (props.isVisible ? "120px" : 0)};
+  height: ${(props) => (props.isVisible ? "140px" : 0)};
   transition: height 0.3s ease-in-out;
   overflow: hidden;
   margin-left: 50px;
+  margin-bottom: 20px;
   width: 650px;
 
   p {
@@ -416,10 +441,11 @@ const BurgerNav5 = styled.div`
 `;
 
 const BurgerNav6 = styled.div`
-  height: ${(props) => (props.isVisible ? "100px" : 0)};
+  height: ${(props) => (props.isVisible ? "120px" : 0)};
   transition: height 0.3s ease-in-out;
   overflow: hidden;
   margin-left: 50px;
+  margin-bottom: 20px;
   width: 650px;
 
   p {
@@ -433,7 +459,7 @@ const BurgerNav6 = styled.div`
     width: 500px;
     height: ${(props) => (props.isVisible ? "150px" : 0)};
   }
-  
+
   @media (max-width: 1315px) {
     margin-left: 130px;
     width: 450px;
@@ -448,8 +474,6 @@ const Title = styled.div`
   align-items: center;
 
   padding-left: 50px;
-  padding-top: 50px;
-  padding-bottom: 50px;
   background-image: url("https://static.wixstatic.com/media/a67ef4_a58691a592bf47f4bd8c6c4fce9655aa~mv2.png");
   background-position: center;
   background-repeat: no-repeat;
@@ -475,12 +499,54 @@ const Title = styled.div`
       font-size: 17px;
     }
   }
+
+  @media (max-width: 1215px) {
+    background-size: 700px 100px;
+
+    h1 {
+      font-size: 23px;
+    }
+  }
+
+  @media (max-width: 825px) {
+    background-size: 600px 100px;
+
+    h1 {
+      font-size: 20px;
+    }
+  }
+
+  @media (max-width: 650px) {
+    background-size: 500px 100px;
+
+    h1 {
+      font-size: 18px;
+    }
+  }
+
+  @media (max-width: 540px) {
+    background-size: 400px 75px;
+
+    h1 {
+      font-size: 14px;
+    }
+  }
 `;
 
 const Title2 = styled(Title)`
   @media (max-width: 1500px) {
     h1 {
       padding-left: 10px;
+    }
+
+    @media (max-width: 825px) {
+      padding-left: 20px;
+    }
+  }
+
+  @media (max-width: 650px) {
+    h1 {
+      padding-left: 5px;
     }
   }
 `;
@@ -492,15 +558,35 @@ const Title3 = styled(Title)`
     h1 {
       margin-left: -30px;
     }
+
+    @media (max-width: 825px) {
+      h1 {
+        margin-left: -10px;
+      }
+    }
   }
 
   @media (max-width: 1315px) {
     padding-left: 180px;
   }
+
+  @media (max-width: 650px) {
+    padding-left: 160px;
+  }
+
+  @media (max-width: 540px) {
+    padding-left: 130px;
+  }
 `;
 
 const Title4 = styled(Title)`
   padding-left: 20px;
+
+  @media (max-width: 825px) {
+    h1 {
+      margin-left: -20px;
+    }
+  }
 `;
 
 const Title5 = styled(Title)`
@@ -515,6 +601,20 @@ const Title5 = styled(Title)`
   @media (max-width: 1315px) {
     padding-left: 160px;
   }
+
+  @media (max-width: 825px) {
+    h1 {
+      margin-left: -10px;
+    }
+  }
+
+  @media (max-width: 650px) {
+    padding-left: 140px;
+  }
+
+  @media (max-width: 540px) {
+    padding-left: 110px;
+  }
 `;
 
 const Title6 = styled(Title)`
@@ -527,6 +627,16 @@ const Title6 = styled(Title)`
 
   @media (max-width: 1315px) {
     padding-left: 100px;
+  }
+
+  @media (max-width: 825px) {
+    h1 {
+      margin-left: -30px;
+    }
+  }
+
+  @media (max-width: 650px) {
+    padding-left: 80px;
   }
 `;
 
@@ -542,7 +652,7 @@ const Footer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 50x;
+  margin-top: 70px;
 `;
 
 const UnderFooter = styled.div`
