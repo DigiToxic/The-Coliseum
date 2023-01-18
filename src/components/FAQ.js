@@ -407,13 +407,12 @@ const BurgerNav2 = styled.div`
     margin-left: 90px;
     width: 550px;
   }
-  
+
   @media (max-width: 650px) {
     margin-left: 120px;
     width: 475px;
     height: ${(props) => (props.isVisible ? "180px" : 0)};
   }
-
 
   @media (max-width: 540px) {
     margin-left: 170px;
@@ -734,57 +733,99 @@ const Title = styled.div`
 `;
 
 const Title2 = styled(Title)`
-  @media (max-width: 1500px) {
-    h1 {
-      padding-left: 10px;
-    }
+  padding-left: 60px;
+
+  @media (max-width: 1315px) {
+    padding-left: 25px;
+  }
+
+  
+  @media (max-width: 1275px) {
+    padding-left: 30px;
+  }
 
     @media (max-width: 825px) {
-      padding-left: 20px;
+      padding-left: 30px;
     }
   }
 
-  @media (max-width: 650px) {
+  @media (max-width: 540px) {
     h1 {
-      padding-left: 5px;
+      margin-left: -5px;
     }
   }
 `;
 
 const Title3 = styled(Title)`
-  padding-left: 240px;
+  padding-left: 220px;
 
   @media (max-width: 1500px) {
     h1 {
-      margin-left: -30px;
+      margin-left: -15px;
+    }
+
+    @media (max-width: 1315px) {
+      h1 {
+        margin-left: -70px;
+      }
+    }
+
+    @media (max-width: 1275px) {
+      h1 {
+        margin-left: -30px;
+      }
     }
 
     @media (max-width: 825px) {
       h1 {
-        margin-left: -10px;
+        margin-left: -50px;
       }
     }
   }
 
-  @media (max-width: 1315px) {
-    padding-left: 180px;
-  }
-
   @media (max-width: 650px) {
-    padding-left: 160px;
+    padding-left: 210px;
   }
 
   @media (max-width: 540px) {
-    padding-left: 130px;
+    padding-left: 170px;
+  }
+
+  @media (max-width: 440px) {
+    padding-left: 160px;
   }
 `;
 
 const Title4 = styled(Title)`
   padding-left: 20px;
 
+  @media (max-width: 1275px) {
+    h1 {
+      margin-left: -30px;
+    }
+  }
+
   @media (max-width: 825px) {
     h1 {
       margin-left: -20px;
+    }
+  }
+
+  @media (max-width: 650px) {
+    h1 {
+      margin-left: -10px;
+    }
+  }
+
+  @media (max-width: 540px) {
+    h1 {
+      margin-left: -20px;
+    }
+  }
+
+  @media (max-width: 440px) {
+    h1 {
+      margin-left: -10px;
     }
   }
 `;
@@ -802,31 +843,8 @@ const Title5 = styled(Title)`
     padding-left: 160px;
   }
 
-  @media (max-width: 825px) {
-    h1 {
-      margin-left: -10px;
-    }
-  }
-
-  @media (max-width: 650px) {
-    padding-left: 140px;
-  }
-
-  @media (max-width: 540px) {
-    padding-left: 110px;
-  }
-`;
-
-const Title6 = styled(Title)`
-  padding-left: 100px;
-
-    h1 {
-      margin-left: -20px;
-    }
-  }
-
-  @media (max-width: 1315px) {
-    padding-left: 100px;
+  @media (max-width: 1275px) {
+    padding-left: 170px;
   }
 
   @media (max-width: 825px) {
@@ -836,7 +854,51 @@ const Title6 = styled(Title)`
   }
 
   @media (max-width: 650px) {
-    padding-left: 80px;
+    padding-left: 170px;
+  }
+
+  @media (max-width: 540px) {
+    padding-left: 130px;
+  }
+
+  @media (max-width: 440px) {
+    padding-left: 120px;
+  }
+`;
+
+const Title6 = styled(Title)`
+  padding-left: 110px;
+
+  h1 {
+    margin-left: -20px;
+  }
+
+  @media (max-width: 1500px) {
+    h1 {
+      margin-left: -30px;
+    }
+  }
+
+  @media (max-width: 1315px) {
+    padding-left: 100px;
+  }
+
+  @media (max-width: 1275px) {
+    padding-left: 90px;
+  }
+
+  @media (max-width: 825px) {
+    h1 {
+      margin-left: -30px;
+    }
+  }
+
+  @media (max-width: 650px) {
+    padding-left: 100px;
+  }
+
+  @media (max-width: 540px) {
+    padding-left: 70px;
   }
 `;
 
@@ -844,6 +906,13 @@ const Arrow = styled.div`
   margin-left: 10px;
   img {
     width: 40px;
+  }
+
+  @media (max-width: 540px) {
+    margin-top: 5px;
+    img {
+      width: 30px;
+    }
   }
 `;
 

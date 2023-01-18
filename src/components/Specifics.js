@@ -83,6 +83,14 @@ export default Specifics;
 const Container = styled.div`
   background-color: rgb(9, 9, 9);
   height: 1400px;
+
+  @media (max-width: 900px) {
+    height: 1300px;
+  }
+
+  @media (max-width: 530px) {
+    height: 1500px;
+  }
 `;
 
 const Head = styled.div`
