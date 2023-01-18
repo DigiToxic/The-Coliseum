@@ -7,7 +7,7 @@ function Navbar() {
 
   return (
     <Container>
-      <Right>
+      <Left>
         <img
           src="/assets/navbar/ColiseumLogo.png"
           alt=""
@@ -33,13 +33,13 @@ function Navbar() {
         <a href="https://opensea.io/" rel="noreferrer" target="_blank">
           <img src="/assets/navbar/opensea.png" alt="" className="opensea" />
         </a>
-      </Right>
+      </Left>
 
       <Middle>
         <img src="/assets/navbar/ColiseumText.png" alt="" />
       </Middle>
 
-      <Left>
+      <Right>
         <Link activeClass="active" to="Utility" spy={true} smooth={true}>
           <img src="/assets/navbar/Utility.png" alt="" className="Utility" />
         </Link>
@@ -60,7 +60,7 @@ function Navbar() {
             className="enter1000"
           />
         </a>
-      </Left>
+      </Right>
 
       <OpenWrapper>
         <svg
@@ -155,7 +155,7 @@ const Container = styled.div`
   align-items: center;
 `;
 
-const Right = styled.div`
+const Left = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -176,15 +176,15 @@ const Middle = styled.div`
   position: absolute;
 `;
 
-const Left = styled.div`
+const Right = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: 165%;
-  position: absolute;
+  margin-right: 300px;
 
-  @media (max-width: 1215px) {
+
+  @media (max-width: 1301px) {
     display: none;
   }
 `;
@@ -199,7 +199,7 @@ const OpenWrapper = styled.div`
     color: rgb(199, 171, 85);
   }
 
-  @media (max-width: 1215px) {
+  @media (max-width: 1301px) {
     display: initial;
   }
 `;
@@ -233,7 +233,7 @@ const BurgerNav = styled.div`
     margin-top: 40px;
   }
 
-  @media (max-width: 1215px) {
+  @media (max-width: 1301px) {
     display: initial;
   }
 `;

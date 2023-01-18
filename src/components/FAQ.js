@@ -238,13 +238,17 @@ const Container = styled.div`
   background-repeat: no-repeat;
   background-size: cover;
   height: 800px;
+
+  @media (max-width: 1315px) {
+    height: 1000px;
+  }
 `;
 
 const Head = styled.div`
   margin-top: 120px;
   margin-bottom: 50px;
   text-align: center;
-  
+
   h1 {
     font-size: 35px;
   }
@@ -299,6 +303,16 @@ const BurgerNav = styled.div`
     line-height: 25px;
     font-size: 19px;
   }
+
+  @media (max-width: 1500px) {
+    margin-left: 90px;
+    width: 500px;
+  }
+
+  @media (max-width: 1315px) {
+    margin-left: 130px;
+    width: 450px;
+  }
 `;
 
 const BurgerNav2 = styled.div`
@@ -312,6 +326,16 @@ const BurgerNav2 = styled.div`
     font-size: 18px;
     line-height: 25px;
     font-size: 19px;
+  }
+
+  @media (max-width: 1500px) {
+    margin-left: 90px;
+    width: 500px;
+  }
+
+  @media (max-width: 1315px) {
+    margin-left: 130px;
+    width: 450px;
   }
 `;
 
@@ -327,6 +351,18 @@ const BurgerNav3 = styled.div`
     line-height: 25px;
     font-size: 19px;
   }
+
+  @media (max-width: 1500px) {
+    margin-left: 90px;
+    width: 500px;
+    height: ${(props) => (props.isVisible ? "140px" : 0)};
+  }
+
+  @media (max-width: 1315px) {
+    margin-left: 130px;
+    width: 450px;
+    height: ${(props) => (props.isVisible ? "180px" : 0)};
+  }
 `;
 
 const BurgerNav4 = styled.div`
@@ -340,6 +376,16 @@ const BurgerNav4 = styled.div`
     font-size: 18px;
     line-height: 25px;
     font-size: 19px;
+  }
+
+  @media (max-width: 1500px) {
+    margin-left: 90px;
+    width: 500px;
+  }
+
+  @media (max-width: 1315px) {
+    margin-left: 130px;
+    width: 450px;
   }
 `;
 
@@ -355,6 +401,18 @@ const BurgerNav5 = styled.div`
     line-height: 25px;
     font-size: 19px;
   }
+
+  @media (max-width: 1500px) {
+    margin-left: 90px;
+    width: 500px;
+    height: ${(props) => (props.isVisible ? "180px" : 0)};
+  }
+
+  @media (max-width: 1315px) {
+    margin-left: 130px;
+    width: 450px;
+    height: ${(props) => (props.isVisible ? "200px" : 0)};
+  }
 `;
 
 const BurgerNav6 = styled.div`
@@ -368,6 +426,18 @@ const BurgerNav6 = styled.div`
     font-size: 18px;
     line-height: 25px;
     font-size: 19px;
+  }
+
+  @media (max-width: 1500px) {
+    margin-left: 90px;
+    width: 500px;
+    height: ${(props) => (props.isVisible ? "150px" : 0)};
+  }
+  
+  @media (max-width: 1315px) {
+    margin-left: 130px;
+    width: 450px;
+    height: ${(props) => (props.isVisible ? "180px" : 0)};
   }
 `;
 
@@ -388,24 +458,76 @@ const Title = styled.div`
   h1 {
     font-size: 23px;
   }
+
+  @media (max-width: 1500px) {
+    background-size: 600px 75px;
+
+    h1 {
+      font-size: 20px;
+    }
+  }
+
+  @media (max-width: 1315px) {
+    background-size: 500px 75px;
+    padding-left: 20px;
+
+    h1 {
+      font-size: 17px;
+    }
+  }
 `;
 
-const Title2 = styled(Title)``;
+const Title2 = styled(Title)`
+  @media (max-width: 1500px) {
+    h1 {
+      padding-left: 10px;
+    }
+  }
+`;
 
 const Title3 = styled(Title)`
   padding-left: 240px;
+
+  @media (max-width: 1500px) {
+    h1 {
+      margin-left: -30px;
+    }
+  }
+
+  @media (max-width: 1315px) {
+    padding-left: 180px;
+  }
 `;
 
 const Title4 = styled(Title)`
-  padding-left:20px;
+  padding-left: 20px;
 `;
 
 const Title5 = styled(Title)`
   padding-left: 180px;
+
+  @media (max-width: 1500px) {
+    h1 {
+      margin-left: -20px;
+    }
+  }
+
+  @media (max-width: 1315px) {
+    padding-left: 160px;
+  }
 `;
 
 const Title6 = styled(Title)`
   padding-left: 100px;
+
+    h1 {
+      margin-left: -20px;
+    }
+  }
+
+  @media (max-width: 1315px) {
+    padding-left: 100px;
+  }
 `;
 
 const Arrow = styled.div`
@@ -416,11 +538,11 @@ const Arrow = styled.div`
 `;
 
 const Footer = styled.div`
-  margin-top: 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 50x;
 `;
 
 const UnderFooter = styled.div`
