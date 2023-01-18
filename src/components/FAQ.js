@@ -9,37 +9,6 @@ function FAQ() {
   const [isVisible5, setIsVisible5] = useState(false);
   const [isVisible6, setIsVisible6] = useState(false);
 
-  const [rotation, setRotation] = useState(0);
-  const [rotation2, setRotation2] = useState(0);
-  const [rotation3, setRotation3] = useState(0);
-  const [rotation4, setRotation4] = useState(0);
-  const [rotation5, setRotation5] = useState(0);
-  const [rotation6, setRotation6] = useState(0);
-
-  const handleClick = () => {
-    setRotation(rotation + 180);
-  };
-
-  const handleClick2 = () => {
-    setRotation2(rotation2 + 180);
-  };
-
-  const handleClick3 = () => {
-    setRotation3(rotation3 + 180);
-  };
-
-  const handleClick4 = () => {
-    setRotation4(rotation4 + 180);
-  };
-
-  const handleClick5 = () => {
-    setRotation5(rotation5 + 180);
-  };
-
-  const handleClick6 = () => {
-    setRotation6(rotation6 + 180);
-  };
-
   return (
     <Container id="FAQ">
       <Head>
@@ -49,16 +18,10 @@ function FAQ() {
       <Middle>
         <Right>
           <One>
-            <Title>
-              <h1 onClick={() => setIsVisible(!isVisible)}>
-                What is Coliseum's supply and mint price?
-              </h1>
-              <Arrow rotation={rotation} onClick={handleClick}>
-                <img
-                  src="\assets\design-assets\Arrow.png"
-                  alt=""
-                  onClick={() => setIsVisible(!isVisible)}
-                />
+            <Title onClick={() => setIsVisible(!isVisible)}>
+              <h1>What is Coliseum's supply and mint price?</h1>
+              <Arrow>
+                <img src="\assets\design-assets\Arrow.png" alt="" />
               </Arrow>
             </Title>
             <BurgerNav isVisible={isVisible}>
@@ -70,16 +33,10 @@ function FAQ() {
             </BurgerNav>
           </One>
           <Two>
-            <Title2>
-              <h1 onClick={() => setIsVisible2(!isVisible2)}>
-                What is the difference between the tiers?
-              </h1>
-              <Arrow rotation={rotation} onClick={handleClick2}>
-                <img
-                  src="\assets\design-assets\Arrow.png"
-                  alt=""
-                  onClick={() => setIsVisible2(!isVisible2)}
-                />
+            <Title2 onClick={() => setIsVisible2(!isVisible2)}>
+              <h1>What is the difference between the tiers?</h1>
+              <Arrow>
+                <img src="\assets\design-assets\Arrow.png" alt="" />
               </Arrow>
             </Title2>
             <BurgerNav2 isVisible={isVisible2}>
@@ -93,16 +50,10 @@ function FAQ() {
             </BurgerNav2>
           </Two>
           <Three>
-            <Title3>
-              <h1 onClick={() => setIsVisible3(!isVisible3)}>
-                What is the mint structure?
-              </h1>
-              <Arrow rotation={rotation3} onClick={handleClick3}>
-                <img
-                  src="\assets\design-assets\Arrow.png"
-                  alt=""
-                  onClick={() => setIsVisible3(!isVisible3)}
-                />
+            <Title3 onClick={() => setIsVisible3(!isVisible3)}>
+              <h1>What is the mint structure?</h1>
+              <Arrow>
+                <img src="\assets\design-assets\Arrow.png" alt="" />
               </Arrow>
             </Title3>
             <BurgerNav3 isVisible={isVisible3}>
@@ -119,16 +70,10 @@ function FAQ() {
 
         <Left>
           <Four>
-            <Title4>
-              <h1 onClick={() => setIsVisible4(!isVisible4)}>
-                Can my access pass be upgraded post mint?
-              </h1>
-              <Arrow rotation={rotation4} onClick={handleClick4}>
-                <img
-                  src="\assets\design-assets\Arrow.png"
-                  alt=""
-                  onClick={() => setIsVisible4(!isVisible4)}
-                />
+            <Title4 onClick={() => setIsVisible4(!isVisible4)}>
+              <h1>Can my access pass be upgraded post mint?</h1>
+              <Arrow>
+                <img src="\assets\design-assets\Arrow.png" alt="" />
               </Arrow>
             </Title4>
             <BurgerNav4 isVisible={isVisible4}>
@@ -136,16 +81,10 @@ function FAQ() {
             </BurgerNav4>
           </Four>
           <Five>
-            <Title5>
-              <h1 onClick={() => setIsVisible5(!isVisible5)}>
-                What is your plan for phase 2?
-              </h1>
-              <Arrow rotation={rotation5} onClick={handleClick5}>
-                <img
-                  src="\assets\design-assets\Arrow.png"
-                  alt=""
-                  onClick={() => setIsVisible5(!isVisible5)}
-                />
+            <Title5 onClick={() => setIsVisible5(!isVisible5)}>
+              <h1>What is your plan for phase 2?</h1>
+              <Arrow>
+                <img src="\assets\design-assets\Arrow.png" alt="" />
               </Arrow>
             </Title5>
             <BurgerNav5 isVisible={isVisible5}>
@@ -160,16 +99,10 @@ function FAQ() {
             </BurgerNav5>
           </Five>
           <Six>
-            <Title6>
-              <h1 onClick={() => setIsVisible6(!isVisible6)}>
-                What will the mint funds be used for?
-              </h1>
-              <Arrow rotation={rotation6} onClick={handleClick6}>
-                <img
-                  src="\assets\design-assets\Arrow.png"
-                  alt=""
-                  onClick={() => setIsVisible6(!isVisible6)}
-                />
+            <Title6 onClick={() => setIsVisible6(!isVisible6)}>
+              <h1>What will the mint funds be used for?</h1>
+              <Arrow>
+                <img src="\assets\design-assets\Arrow.png" alt="" />
               </Arrow>
             </Title6>
             <BurgerNav6 isVisible={isVisible6}>
