@@ -130,6 +130,11 @@ function Navbar() {
             FAQ
           </Link>
         </li>
+        <a href="https://cw-ak.vercel.app/mint">
+        <li>
+        Enter
+        </li>
+        </a>
         <a
           href="https://twitter.com/ItsFadedNFT?s=20&t=E40QScTf_zPcpT8cOumLLg"
           rel="noreferrer"

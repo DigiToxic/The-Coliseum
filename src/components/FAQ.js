@@ -237,25 +237,16 @@ const Container = styled.div`
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 900px;
-
-  @media (max-width: 1315px) {
-    height: 1000px;
-  }
-
-  @media (max-width: 1215px) {
-    height: 1300px;
-  }
+  height: 100%;
 `;
 
 const Head = styled.div`
-  margin-top: 5%;
-  margin-bottom: 5%;
+  margin-top: 20px;
+  margin-bottom: 80px;
   text-align: center;
 
   h1 {
     font-size: 35px;
-    line-height: 1;
   }
 `;
 
@@ -263,12 +254,10 @@ const Middle = styled.div`
   text-align: start;
   display: flex;
   justify-content: space-around;
-  height: 500px;
 
-  @media (max-width: 1215px) {
+  @media (max-width: 1275px) {
     flex-direction: column;
     justify-content: center;
-    height: 1000px;
   }
 `;
 
@@ -278,7 +267,7 @@ const Right = styled.div`
   flex-direction: column;
   justify-content: space-around;
 
-  @media (max-width: 1215px) {
+  @media (max-width: 1275px) {
     justify-content: center;
     align-items: center;
   }
@@ -290,7 +279,7 @@ const Left = styled.div`
   flex-direction: column;
   justify-content: space-around;
 
-  @media (max-width: 1215px) {
+  @media (max-width: 1275px) {
     justify-content: center;
     align-items: center;
   }
@@ -301,15 +290,30 @@ const One = styled.div`
   width: 700px;
 `;
 
-const Two = styled(One)``;
+const Two = styled.div`
+  margin-left: -30px;
+  width: 700px;
+`;
 
-const Three = styled(One)``;
+const Three = styled.div`
+  margin-left: -30px;
+  width: 700px;
+`;
 
-const Four = styled(One)``;
+const Four = styled.div`
+  margin-left: -30px;
+  width: 700px;
+`;
 
-const Five = styled(One)``;
+const Five = styled.div`
+  margin-left: -30px;
+  width: 700px;
+`;
 
-const Six = styled(One)``;
+const Six = styled.div`
+  margin-left: -30px;
+  width: 700px;
+`;
 
 const BurgerNav = styled.div`
   height: ${(props) => (props.isVisible ? "100px" : 0)};
@@ -333,6 +337,40 @@ const BurgerNav = styled.div`
   @media (max-width: 1315px) {
     margin-left: 130px;
     width: 450px;
+  }
+
+  @media (max-width: 1275px) {
+    margin-left: 50px;
+    width: 600px;
+  }
+
+  @media (max-width: 825px) {
+    margin-left: 90px;
+    width: 550px;
+  }
+
+  @media (max-width: 650px) {
+    margin-left: 120px;
+    width: 475px;
+  }
+
+  @media (max-width: 540px) {
+    margin-left: 170px;
+    width: 375px;
+    height: ${(props) => (props.isVisible ? "120px" : 0)};
+
+    p {
+      font-size: 17px;
+    }
+  }
+
+  @media (max-width: 440px) {
+    margin-left: 190px;
+    width: 350px;
+
+    p {
+      font-size: 16px;
+    }
   }
 `;
 
@@ -358,6 +396,39 @@ const BurgerNav2 = styled.div`
   @media (max-width: 1315px) {
     margin-left: 130px;
     width: 450px;
+  }
+
+  @media (max-width: 1275px) {
+    margin-left: 50px;
+    width: 625px;
+  }
+
+  @media (max-width: 825px) {
+    margin-left: 90px;
+    width: 550px;
+  }
+  
+  @media (max-width: 650px) {
+    margin-left: 120px;
+    width: 475px;
+    height: ${(props) => (props.isVisible ? "180px" : 0)};
+  }
+
+
+  @media (max-width: 540px) {
+    margin-left: 170px;
+    width: 375px;
+    height: ${(props) => (props.isVisible ? "165px" : 0)};
+
+    p {
+      font-size: 17px;
+    }
+  }
+
+  @media (max-width: 440px) {
+    margin-left: 190px;
+    width: 350px;
+    height: ${(props) => (props.isVisible ? "200px" : 0)};
   }
 `;
 
@@ -386,6 +457,39 @@ const BurgerNav3 = styled.div`
     width: 450px;
     height: ${(props) => (props.isVisible ? "180px" : 0)};
   }
+
+  @media (max-width: 1275px) {
+    margin-left: 50px;
+    width: 600px;
+    height: ${(props) => (props.isVisible ? "120px" : 0)};
+  }
+
+  @media (max-width: 825px) {
+    margin-left: 90px;
+    width: 550px;
+    height: ${(props) => (props.isVisible ? "140px" : 0)};
+  }
+
+  @media (max-width: 650px) {
+    margin-left: 120px;
+    width: 475px;
+    height: ${(props) => (props.isVisible ? "150px" : 0)};
+  }
+
+  @media (max-width: 540px) {
+    margin-left: 170px;
+    width: 375px;
+    height: ${(props) => (props.isVisible ? "165px" : 0)};
+
+    p {
+      font-size: 17px;
+    }
+  }
+
+  @media (max-width: 440px) {
+    margin-left: 190px;
+    width: 350px;
+  }
 `;
 
 const BurgerNav4 = styled.div`
@@ -393,7 +497,7 @@ const BurgerNav4 = styled.div`
   transition: height 0.3s ease-in-out;
   overflow: hidden;
   margin-left: 50px;
-
+  margin-bottom: 20px;
   width: 700px;
 
   p {
@@ -409,7 +513,27 @@ const BurgerNav4 = styled.div`
 
   @media (max-width: 1315px) {
     margin-left: 130px;
-    width: 450px;
+  }
+
+  @media (max-width: 1275px) {
+    margin-left: 50px;
+  }
+
+  @media (max-width: 825px) {
+    margin-left: 90px;
+  }
+
+  @media (max-width: 650px) {
+    margin-left: 120px;
+  }
+
+  @media (max-width: 540px) {
+    margin-left: 170px;
+  }
+
+  @media (max-width: 440px) {
+    margin-left: 190px;
+    width: 350px;
   }
 `;
 
@@ -438,6 +562,39 @@ const BurgerNav5 = styled.div`
     width: 450px;
     height: ${(props) => (props.isVisible ? "200px" : 0)};
   }
+
+  @media (max-width: 1275px) {
+    margin-left: 50px;
+    width: 650px;
+    height: ${(props) => (props.isVisible ? "140px" : 0)};
+  }
+
+  @media (max-width: 825px) {
+    margin-left: 90px;
+    width: 550px;
+  }
+
+  @media (max-width: 650px) {
+    margin-left: 120px;
+    width: 475px;
+    height: ${(props) => (props.isVisible ? "180px" : 0)};
+  }
+
+  @media (max-width: 540px) {
+    margin-left: 170px;
+    width: 375px;
+    height: ${(props) => (props.isVisible ? "200px" : 0)};
+
+    p {
+      font-size: 17px;
+    }
+  }
+
+  @media (max-width: 440px) {
+    margin-left: 190px;
+    width: 350px;
+    height: ${(props) => (props.isVisible ? "220px" : 0)};
+  }
 `;
 
 const BurgerNav6 = styled.div`
@@ -465,6 +622,39 @@ const BurgerNav6 = styled.div`
     width: 450px;
     height: ${(props) => (props.isVisible ? "180px" : 0)};
   }
+
+  @media (max-width: 1275px) {
+    margin-left: 50px;
+    width: 650px;
+    height: ${(props) => (props.isVisible ? "120px" : 0)};
+  }
+
+  @media (max-width: 825px) {
+    margin-left: 90px;
+    width: 550px;
+    height: ${(props) => (props.isVisible ? "140px" : 0)};
+  }
+
+  @media (max-width: 650px) {
+    margin-left: 120px;
+    width: 475px;
+    height: ${(props) => (props.isVisible ? "150px" : 0)};
+  }
+
+  @media (max-width: 540px) {
+    margin-left: 170px;
+    width: 375px;
+    height: ${(props) => (props.isVisible ? "200px" : 0)};
+
+    p {
+      font-size: 17px;
+    }
+  }
+
+  @media (max-width: 440px) {
+    margin-left: 190px;
+    width: 350px;
+  }
 `;
 
 const Title = styled.div`
@@ -474,6 +664,7 @@ const Title = styled.div`
   align-items: center;
 
   padding-left: 50px;
+  margin-bottom: 20px;
   background-image: url("https://static.wixstatic.com/media/a67ef4_a58691a592bf47f4bd8c6c4fce9655aa~mv2.png");
   background-position: center;
   background-repeat: no-repeat;
@@ -500,7 +691,7 @@ const Title = styled.div`
     }
   }
 
-  @media (max-width: 1215px) {
+  @media (max-width: 1275px) {
     background-size: 700px 100px;
 
     h1 {
@@ -529,6 +720,15 @@ const Title = styled.div`
 
     h1 {
       font-size: 14px;
+    }
+  }
+
+  @media (max-width: 440px) {
+    background-size: 375px 75px;
+    margin-left: 20px;
+
+    h1 {
+      font-size: 12px;
     }
   }
 `;
@@ -652,9 +852,10 @@ const Footer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 70px;
+  margin-top: 110px;
 `;
 
 const UnderFooter = styled.div`
   margin-top: 30px;
+  margin-bottom: 50px;
 `;

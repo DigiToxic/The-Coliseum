@@ -29,6 +29,17 @@ li {
   color: rgb(199, 171, 85);
 }
 
+a:link { text-decoration: none; }
+
+
+a:visited { text-decoration: none; }
+
+
+a:hover { text-decoration: none; }
+
+
+a:active { text-decoration: none; }
+
 .Utility {
   width: 100px;
   margin-top: -12px;
@@ -48,7 +59,6 @@ li {
 
 @media (max-width: 1375px) {
   .Utility {
-    width: 80px;
     margin-top: -12px;
     margin-left: -190px;
   }
@@ -57,6 +67,12 @@ li {
 .Utility:hover {
   width: 110px;
   border-bottom: 2px solid rgb(199, 171, 85);
+}
+
+@media (max-width: 1490px) {
+  .Utility:hover {
+    width: 90px;
+  }
 }
 
 .Specifics {
@@ -88,6 +104,12 @@ li {
   border-bottom: 2px solid rgb(199, 171, 85);
 }
 
+@media (max-width: 1490px) {
+  .Specifics:hover {
+    width: 110px;
+  }
+}
+
 .faqs {
   width: 60px;
   margin-top: -21px;
@@ -116,6 +138,12 @@ li {
   border-bottom: 2px solid rgb(199, 171, 85);
 }
 
+@media (max-width: 1490px) {
+  .faqs:hover {
+    width: 65px;
+  }
+}
+
 .enter1000 {
   width: 150px;
   margin-top: -10px;
@@ -142,6 +170,12 @@ li {
 
 .enter1000:hover {
   width: 170px;
+}
+
+@media (max-width: 1490px) {
+  .enter1000:hover {
+    width: 160px;
+  }
 }
 
 .ColiseumLogo {
