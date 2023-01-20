@@ -54,6 +54,8 @@ const Container = styled.div`
   background-attachment: fixed;
   background-size: cover;
   height: 1200px;
+  margin-top: -10rem;
+  padding-top: 10rem;
 
   @media (max-width: 1250px) {
     height: 1000px;
