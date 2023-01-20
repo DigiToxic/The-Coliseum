@@ -374,6 +374,15 @@ const BurgerNav = styled.div`
       font-size: 17px;
     }
   }
+
+  @media (max-width: 415px) {
+    margin-left: 20px;
+    width: 340px;
+
+    p {
+      font-size: 16px;
+    }
+  }
 `;
 
 const BurgerNav2 = styled.div`
@@ -437,6 +446,16 @@ const BurgerNav2 = styled.div`
 
     p {
       font-size: 17px;
+    }
+  }
+
+  @media (max-width: 415px) {
+    margin-left: 20px;
+    width: 340px;
+    height: ${(props) => (props.isVisible ? "200px" : 0)};
+
+    p {
+      font-size: 16px;
     }
   }
 `;
@@ -508,6 +527,15 @@ const BurgerNav3 = styled.div`
       font-size: 17px;
     }
   }
+
+  @media (max-width: 415px) {
+    margin-left: 20px;
+    width: 340px;
+
+    p {
+      font-size: 16px;
+    }
+  }
 `;
 
 const BurgerNav4 = styled.div`
@@ -552,6 +580,15 @@ const BurgerNav4 = styled.div`
 
     p {
       font-size: 17px;
+    }
+  }
+
+  @media (max-width: 415px) {
+    margin-left: 20px;
+    width: 340px;
+
+    p {
+      font-size: 16px;
     }
   }
 `;
@@ -623,6 +660,15 @@ const BurgerNav5 = styled.div`
       font-size: 17px;
     }
   }
+
+  @media (max-width: 415px) {
+    margin-left: 20px;
+    width: 340px;
+
+    p {
+      font-size: 16px;
+    }
+  }
 `;
 
 const BurgerNav6 = styled.div`
@@ -691,6 +737,15 @@ const BurgerNav6 = styled.div`
 
     p {
       font-size: 17px;
+    }
+  }
+
+  @media (max-width: 415px) {
+    margin-left: 20px;
+    width: 340px;
+
+    p {
+      font-size: 16px;
     }
   }
 `;
@@ -767,6 +822,15 @@ const Title = styled.div`
       font-size: 15px;
     }
   }
+
+  @media (max-width: 415px) {
+    background-size: 350px 100px;
+    width: 350px;
+
+    h1 {
+      font-size: 13px;
+    }
+  }
 `;
 
 const Title2 = styled(Title)``;
@@ -789,6 +853,12 @@ const Title4 = styled(Title)`
   @media (max-width: 475px) {
     h1 {
       font-size: 14px;
+    }
+  }
+
+  @media (max-width: 415px) {
+    h1 {
+      font-size: 12px;
     }
   }
 `;
@@ -814,6 +884,10 @@ const Arrow = styled.div`
     img {
       width: 30px;
     }
+  }
+
+  @media (max-width: 415px) {
+    margin-bottom: 2px;
   }
 `;
 
