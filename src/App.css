@@ -292,6 +292,12 @@ a:active { text-decoration: none; }
   }
 }
 
+@media (max-width: 400px) {
+  .TitleOne {
+    width: 350px;
+  }
+}
+
 .ColLogo {
   width: 500px;
 }
@@ -345,6 +351,12 @@ a:active { text-decoration: none; }
 @media (max-width: 515px) {
   .TitleTwo {
     width: 400px;
+  }
+}
+
+@media (max-width: 400px) {
+  .TitleTwo {
+    width: 350px;
   }
 }
 

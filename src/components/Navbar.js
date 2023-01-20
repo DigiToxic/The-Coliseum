@@ -186,6 +186,7 @@ const Middle = styled.div`
   }
 
   @media (max-width: 535px) {
+    margin-left: 0px;
     img {
       width: 200px;
     }

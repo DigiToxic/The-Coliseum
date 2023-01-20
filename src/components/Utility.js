@@ -5,8 +5,16 @@ function Utility() {
   return (
     <Container id="Utility">
       <HeadUtility>
-        <h1>Coliseum's Utility</h1>
-        <p>The following sets Coliseum apart from the rest :</p>
+        <LeftVine>
+          <img src="\assets\design-assets\left vine.png" alt="" />
+        </LeftVine>
+        <div>
+          <h1>Coliseum's Utility</h1>
+          <p>The following sets Coliseum apart from the rest :</p>
+        </div>
+        <RightVine>
+          <img src="\assets\design-assets\right vine.png" alt="" />
+        </RightVine>
       </HeadUtility>
 
       <UtilityCoin>
@@ -91,7 +99,9 @@ const Container = styled.div`
 const HeadUtility = styled.div`
   margin-top: 100px;
   margin-bottom: 100px;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   h1 {
     color: rgb(199, 171, 85);
   }
@@ -99,6 +109,70 @@ const HeadUtility = styled.div`
   p {
     color: white;
     font-size: 20px;
+  }
+
+  div {
+    text-align: center;
+  }
+`;
+
+const LeftVine = styled.div`
+  margin-right: 50px;
+  img {
+    width: 225px;
+  }
+
+  @media (max-width: 950px) {
+    margin-right: 30px;
+    margin-left: 10px;
+    img {
+      width: 200px;
+    }
+  }
+
+  @media (max-width: 765px) {
+    margin-right: 10px;
+    img {
+      width: 150px;
+    }
+  }
+
+  @media (max-width: 670px) {
+    margin-right: 0px;
+    margin-left: 0px;
+    img {
+      display: none;
+    }
+  }
+`;
+
+const RightVine = styled.div`
+  margin-left: 50px;
+  img {
+    width: 225px;
+  }
+
+  @media (max-width: 950px) {
+    margin-right: 10px;
+    margin-left: 30px;
+    img {
+      width: 200px;
+    }
+  }
+
+  @media (max-width: 765px) {
+    margin-left: 10px;
+    img {
+      width: 150px;
+    }
+  }
+
+  @media (max-width: 670px) {
+    margin-right: 0px;
+    margin-left: 0px;
+    img {
+      display: none;
+    }
   }
 `;
 
@@ -125,6 +199,7 @@ const Right = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-left: 5%;
 `;
 
 const One = styled.div`

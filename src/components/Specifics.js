@@ -5,7 +5,15 @@ function Specifics() {
   return (
     <Container id="Specifics">
       <Head>
-        <h1>Utility Specifics</h1>
+        <LeftVine>
+          <img src="\assets\design-assets\left vine.png" alt="" />
+        </LeftVine>
+        <div>
+          <h1>Utility Specifics</h1>
+        </div>
+        <RightVine>
+          <img src="\assets\design-assets\right vine.png" alt="" />
+        </RightVine>
       </Head>
 
       <First>
@@ -82,22 +90,96 @@ export default Specifics;
 
 const Container = styled.div`
   background-color: rgb(9, 9, 9);
-  height: 1400px;
+  height: 1500px;
 
   @media (max-width: 900px) {
-    height: 1300px;
+    height: 2300px;
   }
 
   @media (max-width: 530px) {
-    height: 1500px;
+    height: 2600px;
   }
 `;
 
 const Head = styled.div`
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  div {
+    text-align: center;
+  }
+
   h1 {
     color: rgb(199, 171, 85);
-    margin-bottom: 80px;
+  }
+`;
+
+const LeftVine = styled.div`
+  margin-right: 50px;
+  img {
+    width: 225px;
+  }
+
+  @media (max-width: 950px) {
+    margin-right: 30px;
+    img {
+      width: 200px;
+    }
+  }
+
+  @media (max-width: 866px) {
+    img {
+      width: 175px;
+    }
+  }
+
+  @media (max-width: 765px) {
+    img {
+      width: 150px;
+    }
+  }
+
+  @media (max-width: 670px) {
+    margin-right: 0px;
+    margin-left: 0px;
+    img {
+      display: none;
+    }
+  }
+`;
+
+const RightVine = styled.div`
+  margin-left: 50px;
+  img {
+    width: 225px;
+  }
+
+  @media (max-width: 950px) {
+    margin-left: 30px;
+    img {
+      width: 200px;
+    }
+  }
+
+  @media (max-width: 866px) {
+    img {
+      width: 175px;
+    }
+  }
+
+  @media (max-width: 765px) {
+    img {
+      width: 150px;
+    }
+  }
+
+  @media (max-width: 670px) {
+    margin-right: 0px;
+    margin-left: 0px;
+    img {
+      display: none;
+    }
   }
 `;
 
@@ -109,14 +191,20 @@ const First = styled.div`
   align-items: center;
   padding-top: 30px;
   padding-bottom: 30px;
+  line-height: 30px;
 
   h1 {
     width: 910px;
     text-align: start;
   }
   p {
-    width: 900px;
+    width: 910px;
     font-size: 19px;
+  }
+
+  @media (max-width: 900px) {
+    justify-content: center;
+    flex-direction: column;
   }
 
   @media (max-width: 1215px) {
@@ -124,7 +212,7 @@ const First = styled.div`
       width: 610px;
     }
     p {
-      width: 600px;
+      width: 610px;
     }
   }
 
@@ -133,7 +221,7 @@ const First = styled.div`
       width: 510px;
     }
     p {
-      width: 500px;
+      width: 510px;
       font-size: 18px;
     }
   }
@@ -143,7 +231,7 @@ const First = styled.div`
       width: 410px;
     }
     p {
-      width: 400px;
+      width: 410px;
     }
   }
 
@@ -152,7 +240,8 @@ const First = styled.div`
       width: 360px;
     }
     p {
-      width: 350px;
+      width: 360px;
+      font-size: 17px;
     }
   }
 `;
@@ -166,13 +255,14 @@ const Second = styled.div`
   background-color: rgb(11, 13, 18);
   padding-top: 30px;
   padding-bottom: 30px;
+  line-height: 30px;
 
   h1 {
     width: 910px;
     text-align: start;
   }
   p {
-    width: 900px;
+    width: 910px;
     font-size: 19px;
   }
 
@@ -181,8 +271,13 @@ const Second = styled.div`
       width: 610px;
     }
     p {
-      width: 600px;
+      width: 610px;
     }
+  }
+
+  @media (max-width: 900px) {
+    justify-content: center;
+    flex-direction: column;
   }
 
   @media (max-width: 630px) {
@@ -190,18 +285,17 @@ const Second = styled.div`
       width: 510px;
     }
     p {
-      width: 500px;
+      width: 510px;
       font-size: 18px;
     }
   }
 
-  
   @media (max-width: 530px) {
     h1 {
       width: 410px;
     }
     p {
-      width: 400px;
+      width: 410px;
     }
   }
 
@@ -210,50 +304,38 @@ const Second = styled.div`
       width: 360px;
     }
     p {
-      width: 350px;
+      width: 360px;
+      font-size: 17px;
     }
   }
 `;
 
-const Three = styled(First)``;
+const Three = styled(First)`
+  @media (max-width: 900px) {
+    justify-content: center;
+    flex-direction: column;
+  }
+`;
 
 const Four = styled(First)`
   background-color: rgb(11, 13, 18);
-`;
 
-const Right1 = styled.div`
   @media (max-width: 900px) {
-    img {
-      display: none;
-    }
+    justify-content: center;
+    flex-direction: column;
   }
 `;
+
+const Right1 = styled.div``;
 
 const Right2 = styled.div`
   margin-left: 50px;
-
-  @media (max-width: 900px) {
-    img {
-      display: none;
-    }
   }
 `;
 
-const Right3 = styled.div`
-  @media (max-width: 900px) {
-    img {
-      display: none;
-    }
-  }
-`;
+const Right3 = styled.div``;
 
-const Right4 = styled.div`
-  @media (max-width: 900px) {
-    img {
-      display: none;
-    }
-  }
-`;
+const Right4 = styled.div``;
 
 const Left1 = styled.div``;
 
@@ -261,7 +343,7 @@ const Left2 = styled.div`
   margin-left: 50px;
 
   @media (max-width: 900px) {
-    margin-left: -50px;
+    margin-left: 0px;
   }
 `;
 

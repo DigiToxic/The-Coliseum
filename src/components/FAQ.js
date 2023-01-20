@@ -12,7 +12,15 @@ function FAQ() {
   return (
     <Container id="FAQ">
       <Head>
-        <h1>FAQ</h1>
+        <LeftVine>
+          <img src="\assets\design-assets\left vine.png" alt="" />
+        </LeftVine>
+        <div>
+          <h1>FAQ</h1>
+        </div>
+        <RightVine>
+          <img src="\assets\design-assets\right vine.png" alt="" />
+        </RightVine>
       </Head>
 
       <Middle>
@@ -176,10 +184,71 @@ const Container = styled.div`
 const Head = styled.div`
   margin-top: 20px;
   margin-bottom: 80px;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  div {
+    text-align: center;
+  }
 
   h1 {
     font-size: 35px;
+    margin-top: 50px;
+  }
+`;
+
+const LeftVine = styled.div`
+  margin-right: 50px;
+  img {
+    width: 225px;
+  }
+
+  @media (max-width: 950px) {
+    img {
+      width: 200px;
+    }
+  }
+
+  @media (max-width: 866px) {
+    img {
+      width: 175px;
+    }
+  }
+
+  @media (max-width: 670px) {
+    margin-right: 0px;
+    margin-left: 0px;
+    img {
+      display: none;
+    }
+  }
+`;
+
+const RightVine = styled.div`
+  margin-left: 50px;
+  img {
+    width: 225px;
+  }
+
+  @media (max-width: 950px) {
+    img {
+      width: 200px;
+    }
+  }
+
+  @media (max-width: 866px) {
+    img {
+      width: 175px;
+    }
+  }
+
+  @media (max-width: 670px) {
+    margin-right: 0px;
+    margin-left: 0px;
+    img {
+      display: none;
+    }
   }
 `;
 
@@ -199,10 +268,15 @@ const Right = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  margin-left: 22px;
 
   @media (max-width: 1275px) {
     justify-content: center;
     align-items: center;
+  }
+
+  @media (max-width: 440px) {
+    margin-left: 0px;
   }
 `;
 
@@ -211,10 +285,15 @@ const Left = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  margin-left: 22px;
 
   @media (max-width: 1275px) {
     justify-content: center;
     align-items: center;
+  }
+
+  @media (max-width: 440px) {
+    margin-left: 0px;
   }
 `;
 
@@ -305,6 +384,15 @@ const BurgerNav = styled.div`
       font-size: 16px;
     }
   }
+
+  @media (max-width: 440px) {
+    margin-left: 220px;
+    width: 300px;
+
+    p {
+      font-size: 15px;
+    }
+  }
 `;
 
 const BurgerNav2 = styled.div`
@@ -361,6 +449,15 @@ const BurgerNav2 = styled.div`
     margin-left: 190px;
     width: 350px;
     height: ${(props) => (props.isVisible ? "200px" : 0)};
+  }
+
+  @media (max-width: 440px) {
+    margin-left: 220px;
+    width: 300px;
+
+    p {
+      font-size: 15px;
+    }
   }
 `;
 
@@ -422,6 +519,15 @@ const BurgerNav3 = styled.div`
     margin-left: 190px;
     width: 350px;
   }
+
+  @media (max-width: 440px) {
+    margin-left: 220px;
+    width: 300px;
+
+    p {
+      font-size: 15px;
+    }
+  }
 `;
 
 const BurgerNav4 = styled.div`
@@ -466,6 +572,15 @@ const BurgerNav4 = styled.div`
   @media (max-width: 440px) {
     margin-left: 190px;
     width: 350px;
+  }
+
+  @media (max-width: 440px) {
+    margin-left: 220px;
+    width: 300px;
+
+    p {
+      font-size: 17px;
+    }
   }
 `;
 
@@ -527,6 +642,15 @@ const BurgerNav5 = styled.div`
     width: 350px;
     height: ${(props) => (props.isVisible ? "220px" : 0)};
   }
+
+  @media (max-width: 440px) {
+    margin-left: 220px;
+    width: 300px;
+
+    p {
+      font-size: 15px;
+    }
+  }
 `;
 
 const BurgerNav6 = styled.div`
@@ -586,6 +710,15 @@ const BurgerNav6 = styled.div`
   @media (max-width: 440px) {
     margin-left: 190px;
     width: 350px;
+  }
+
+  @media (max-width: 440px) {
+    margin-left: 220px;
+    width: 300px;
+
+    p {
+      font-size: 15px;
+    }
   }
 `;
 
@@ -661,6 +794,15 @@ const Title = styled.div`
 
     h1 {
       font-size: 12px;
+    }
+  }
+
+  @media (max-width: 390px) {
+    background-size: 325px 100px;
+    margin-left: 20px;
+
+    h1 {
+      font-size: 11.5px;
     }
   }
 `;
