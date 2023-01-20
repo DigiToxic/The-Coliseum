@@ -52,7 +52,6 @@ const Container = styled.div`
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: cover;
   height: 1200px;
   margin-top: -10rem;
   padding-top: 10rem;
