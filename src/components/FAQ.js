@@ -858,7 +858,7 @@ const Title4 = styled(Title)`
 
   @media (max-width: 415px) {
     h1 {
-      font-size: 11px;
+      font-size: 12px;
     }
   }
 `;
@@ -888,6 +888,10 @@ const Arrow = styled.div`
 
   @media (max-width: 415px) {
     margin-bottom: 2px;
+
+    img {
+      width: 28px;
+    }
   }
 `;
 
