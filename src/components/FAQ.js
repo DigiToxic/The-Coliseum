@@ -178,6 +178,7 @@ const Container = styled.div`
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   height: 100%;
 `;
 
@@ -286,6 +287,7 @@ const Left = styled.div`
   flex-direction: column;
   justify-content: space-around;
   margin-left: 22px;
+
 
   @media (max-width: 1275px) {
     justify-content: center;
