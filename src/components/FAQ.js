@@ -830,7 +830,7 @@ const Title = styled.div`
     width: 350px;
 
     h1 {
-      font-size: 12px;
+      font-size: 11px;
     }
   }
 `;
@@ -860,7 +860,7 @@ const Title4 = styled(Title)`
 
   @media (max-width: 415px) {
     h1 {
-      font-size: 12px;
+      font-size: 11px;
     }
   }
 `;
