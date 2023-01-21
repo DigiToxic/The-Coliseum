@@ -152,7 +152,6 @@ function Navbar() {
 export default Navbar;
 
 const Container = styled.div`
-  // background-image: url("https://static.wixstatic.com/media/a67ef4_29f1a49b50ea4a97af2802af9e09214a~mv2.jpg");
   height: 120px;
   display: flex;
   flex-direction: row;

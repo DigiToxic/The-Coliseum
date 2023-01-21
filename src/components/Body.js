@@ -49,12 +49,11 @@ export default Body;
 
 const Container = styled.div`
   background-image: url("https://static.wixstatic.com/media/a67ef4_29f1a49b50ea4a97af2802af9e09214a~mv2.jpg");
-  background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  height: 1200px;
   margin-top: -10rem;
   padding-top: 10rem;
+  height: 1200px;
 
   @media (max-width: 1250px) {
     height: 1000px;
