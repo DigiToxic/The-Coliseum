@@ -456,7 +456,7 @@ const BurgerNav2 = styled.div`
   @media (max-width: 415px) {
     margin-left: 20px;
     width: 320px;
-    height: ${(props) => (props.isVisible ? "200px" : 0)};
+    height: ${(props) => (props.isVisible ? "220px" : 0)};
 
     p {
       font-size: 16px;
