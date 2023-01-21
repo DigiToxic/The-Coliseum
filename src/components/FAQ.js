@@ -53,7 +53,7 @@ function FAQ() {
                 tools and educational events. <br /> <br /> Tier 2 has access
                 to: All of the above, in addition to WEB3 marketing, advisory,
                 seed rounds and IRL utility reserved exclusively for our most
-                elite members
+                elite members.
               </p>
             </BurgerNav2>
           </Two>
@@ -257,6 +257,8 @@ const Middle = styled.div`
   text-align: start;
   display: flex;
   justify-content: space-around;
+  align-items: center;
+  height: 100%;
 
   @media (max-width: 1275px) {
     flex-direction: column;
@@ -387,7 +389,7 @@ const BurgerNav = styled.div`
 `;
 
 const BurgerNav2 = styled.div`
-  height: ${(props) => (props.isVisible ? "120px" : 0)};
+  height: ${(props) => (props.isVisible ? "180px" : 0)};
   transition: height 0.3s ease-in-out;
   overflow: hidden;
   margin-left: 50px;
@@ -413,17 +415,18 @@ const BurgerNav2 = styled.div`
   @media (max-width: 1275px) {
     margin-left: 50px;
     width: 625px;
+    height: ${(props) => (props.isVisible ? "140px" : 0)};
   }
 
   @media (max-width: 775px) {
     margin-left: 30px;
     width: 550px;
+    height: ${(props) => (props.isVisible ? "180px" : 0)};
   }
 
   @media (max-width: 650px) {
     margin-left: 50px;
     width: 475px;
-    height: ${(props) => (props.isVisible ? "180px" : 0)};
   }
 
   @media (max-width: 600px) {
@@ -453,7 +456,7 @@ const BurgerNav2 = styled.div`
   @media (max-width: 415px) {
     margin-left: 20px;
     width: 320px;
-    height: ${(props) => (props.isVisible ? "220px" : 0)};
+    height: ${(props) => (props.isVisible ? "200px" : 0)};
 
     p {
       font-size: 16px;
@@ -666,7 +669,7 @@ const BurgerNav5 = styled.div`
   @media (max-width: 415px) {
     margin-left: 20px;
     width: 320px;
-    height: ${(props) => (props.isVisible ? "220px" : 0)};
+    height: ${(props) => (props.isVisible ? "240px" : 0)};
 
     p {
       font-size: 16px;
