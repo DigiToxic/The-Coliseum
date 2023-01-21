@@ -257,12 +257,12 @@ const Middle = styled.div`
   text-align: start;
   display: flex;
   justify-content: space-around;
-  align-items: center;
-  height: 100%;
+  align-items: start;
 
   @media (max-width: 1275px) {
     flex-direction: column;
     justify-content: center;
+    align-items: center;
   }
 `;
 
@@ -270,8 +270,8 @@ const Right = styled.div`
   text-align: start;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: start;
+  align-items: start;
   margin-left: 22px;
 
   @media (max-width: 1275px) {
@@ -289,6 +289,8 @@ const Left = styled.div`
   text-align: start;
   display: flex;
   flex-direction: column;
+  justify-content: start;
+  align-items: start;
   margin-left: 22px;
 
   @media (max-width: 1275px) {
@@ -328,12 +330,12 @@ const BurgerNav = styled.div`
     font-size: 19px;
   }
 
-  @media (max-width: 1500px) {
+  @media (max-width: 1485px) {
     margin-left: 90px;
     width: 500px;
   }
 
-  @media (max-width: 1315px) {
+  @media (max-width: 1345px) {
     margin-left: 130px;
     width: 450px;
   }
@@ -402,12 +404,12 @@ const BurgerNav2 = styled.div`
     font-size: 19px;
   }
 
-  @media (max-width: 1500px) {
+  @media (max-width: 1485px) {
     margin-left: 90px;
     width: 500px;
   }
 
-  @media (max-width: 1315px) {
+  @media (max-width: 1345px) {
     margin-left: 130px;
     width: 450px;
   }
@@ -478,13 +480,13 @@ const BurgerNav3 = styled.div`
     font-size: 19px;
   }
 
-  @media (max-width: 1500px) {
+  @media (max-width: 1485px) {
     margin-left: 90px;
     width: 500px;
     height: ${(props) => (props.isVisible ? "140px" : 0)};
   }
 
-  @media (max-width: 1315px) {
+  @media (max-width: 1345px) {
     margin-left: 130px;
     width: 450px;
     height: ${(props) => (props.isVisible ? "180px" : 0)};
@@ -557,12 +559,12 @@ const BurgerNav4 = styled.div`
     font-size: 19px;
   }
 
-  @media (max-width: 1500px) {
+  @media (max-width: 1485px) {
     margin-left: 90px;
     width: 500px;
   }
 
-  @media (max-width: 1315px) {
+  @media (max-width: 1345px) {
     margin-left: 130px;
   }
 
@@ -612,13 +614,13 @@ const BurgerNav5 = styled.div`
     font-size: 19px;
   }
 
-  @media (max-width: 1500px) {
+  @media (max-width: 1485px) {
     margin-left: 90px;
     width: 500px;
     height: ${(props) => (props.isVisible ? "180px" : 0)};
   }
 
-  @media (max-width: 1315px) {
+  @media (max-width: 1345px) {
     margin-left: 130px;
     width: 450px;
     height: ${(props) => (props.isVisible ? "200px" : 0)};
@@ -691,13 +693,13 @@ const BurgerNav6 = styled.div`
     font-size: 19px;
   }
 
-  @media (max-width: 1500px) {
+  @media (max-width: 1485px) {
     margin-left: 90px;
     width: 500px;
     height: ${(props) => (props.isVisible ? "150px" : 0)};
   }
 
-  @media (max-width: 1315px) {
+  @media (max-width: 1345px) {
     margin-left: 130px;
     width: 450px;
     height: ${(props) => (props.isVisible ? "180px" : 0)};
