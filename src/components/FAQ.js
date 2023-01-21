@@ -341,7 +341,7 @@ const BurgerNav = styled.div`
     width: 600px;
   }
 
-  @media (max-width: 750px) {
+  @media (max-width: 775px) {
     margin-left: 30px;
     width: 550px;
   }
@@ -414,7 +414,7 @@ const BurgerNav2 = styled.div`
     width: 625px;
   }
 
-  @media (max-width: 750px) {
+  @media (max-width: 775px) {
     margin-left: 30px;
     width: 550px;
   }
@@ -492,7 +492,7 @@ const BurgerNav3 = styled.div`
     height: ${(props) => (props.isVisible ? "120px" : 0)};
   }
 
-  @media (max-width: 750px) {
+  @media (max-width: 775px) {
     margin-left: 30px;
     width: 550px;
     height: ${(props) => (props.isVisible ? "140px" : 0)};
@@ -566,7 +566,7 @@ const BurgerNav4 = styled.div`
     margin-left: 50px;
   }
 
-  @media (max-width: 750px) {
+  @media (max-width: 775px) {
     margin-left: 50px;
   }
 
@@ -626,7 +626,7 @@ const BurgerNav5 = styled.div`
     height: ${(props) => (props.isVisible ? "140px" : 0)};
   }
 
-  @media (max-width: 750px) {
+  @media (max-width: 775px) {
     margin-left: 30px;
     width: 550px;
   }
@@ -705,7 +705,7 @@ const BurgerNav6 = styled.div`
     height: ${(props) => (props.isVisible ? "120px" : 0)};
   }
 
-  @media (max-width: 750px) {
+  @media (max-width: 775px) {
     margin-left: 30px;
     width: 550px;
     height: ${(props) => (props.isVisible ? "140px" : 0)};
