@@ -452,7 +452,7 @@ const BurgerNav2 = styled.div`
   @media (max-width: 415px) {
     margin-left: 20px;
     width: 320px;
-    height: ${(props) => (props.isVisible ? "200px" : 0)};
+    height: ${(props) => (props.isVisible ? "220px" : 0)};
 
     p {
       font-size: 16px;
@@ -531,7 +531,7 @@ const BurgerNav3 = styled.div`
   @media (max-width: 415px) {
     margin-left: 20px;
     width: 320px;
-    height: ${(props) => (props.isVisible ? "190px" : 0)};
+    height: ${(props) => (props.isVisible ? "210px" : 0)};
 
     p {
       font-size: 16px;
@@ -726,7 +726,7 @@ const BurgerNav6 = styled.div`
   @media (max-width: 530px) {
     margin-left: 30px;
     width: 420px;
-    height: ${(props) => (props.isVisible ? "200px" : 0)};
+    height: ${(props) => (props.isVisible ? "220px" : 0)};
 
     p {
       font-size: 18px;
